@@ -7,101 +7,180 @@
     <title>Barbershop</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <a href=""
-        ><img src="./images/Logo.svg" alt="Barbershop" width="76" height="76"
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="">Про нас</a></li>
-          <li><a href="">Послуги та ціни</a></li>
-          <li><a href="">Майстри</a></li>
-          <li><a href="">Контакти</a></li>
-        </ul>
-      </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запис</button>
+    <!-- ========== HEADER ========== -->
+
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo" href="./index.html">
+          <svg class="logo-icon" width="68" height="56">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-menu-list list">
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="">Про нас</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="">Послуги та ціни</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="">Майстри</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header-contact-phone" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="header-order-btn order-btn button" type="button">
+          онлайн-запис
+        </button>
+        <button class="mobile-menu-button button" type="button">
+          <svg class="mobile-menu-icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
     </header>
-    <!-- MAIN -->
+
+    <!-- ========== MAIN ========== -->
+
     <main>
-      <section>
-        <ul>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Youtube</a
-            >
-          </li>
-        </ul>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
-          Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та
-          зі смаком.
-        </p>
-        <!-- Slider controls -->
-        <ul>
-          <li><button type="button">Back</button></li>
-          <li><button type="button">Forward</button></li>
-        </ul>
+      <!-- ========== HERO SECTION ========== -->
+
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-left-side">
+            <ul class="hero-media media list">
+              <li class="hero-media-item">
+                <a
+                  class="hero-media-link link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-media-item">
+                <a
+                  class="hero-media-link link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero-right-side">
+            <p class="hero-uppertitle uppertitle uppertitle-light">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-descr">
+              Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
+              та зі смаком.
+            </p>
+          </div>
+        </div>
       </section>
-      <section id="about">
-        <ul>
-          <li>
-            <img
-              src="./images/about_1.jpg"
-              alt="Гоління бороди"
-              width="270"
-              height="455"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/about_2.jpg"
-              alt="Стрижка"
-              width="270"
-              height="455"
-            />
-          </li>
-        </ul>
-        <p>Про нас</p>
-        <h2>Найкращий Барбершоп твого міста</h2>
-        <p>
-          Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до
-          нас.
-        </p>
-        <p>
-          Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін. І
-          коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш бути
-          тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі". Тому
-          ми завжди готові вдосконалити кожного, хто до нас приходить!
-        </p>
-        <button type="button">онлайн-запис</button>
+
+      <!-- ========== ABOUT SECTION ========== -->
+
+      <section class="about" id="about">
+        <div class="container about-container">
+          <div class="about-photo-side">
+            <ul class="about-photo-list list">
+              <li class="about-photo-item">
+                <img
+                  class="about-photo"
+                  src="./images/about_1.jpg"
+                  alt="Гоління бороди"
+                  width="270"
+                  height="455"
+                />
+              </li>
+              <li class="about-photo-item">
+                <img
+                  class="about-photo"
+                  src="./images/about_2.jpg"
+                  alt="Стрижка"
+                  width="270"
+                  height="455"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="about-text-side">
+            <p class="uppertitle">Про нас</p>
+            <h2 class="about-title title">Найкращий Барбершоп твого міста</h2>
+            <p class="about-undertitle undertitle">
+              Якщо ти хочеш додати у свій образ більше впевненості, тобі точно
+              до нас.
+            </p>
+            <p class="about-descr">
+              Ми команда, яка ніколи не зупиняється на досягнутому і прагне
+              змін. І коли ти потрапиш до рук нашого майстра, то вже ніколи не
+              зможеш бути тим самим. Ми команда, яка завжди з клієнтами "на
+              одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до
+              нас приходить!
+            </p>
+            <button class="button" type="button">онлайн-запис</button>
+          </div>
+        </div>
       </section>
-      <!-- Price section -->
-      <section id="price">
-        <p>Проведи час у компанії кращих майстрів</p>
-        <h2>Послуги та ціни</h2>
-        <p>Чоловіча стрижка від 300 грн.</p>
-        <p>Стрижка бороди від 200 грн.</p>
-        <p>Стрижка вусів від 200 грн.</p>
-        <p>Гоління небезпечною бритвою від 200 грн.</p>
-        <p>Стрижка у стажера від 50 грн.</p>
-        <p>Стрижка під насадку 200 грн.</p>
-        <p>Дитяча стрижка (до 12 років) від 300 грн.</p>
-        <p>Камуфлювання сивини від 200 грн.</p>
-        <button type="button">онлайн-запис</button>
+
+      <!-- ========== PRICE SECTION ========== -->
+
+      <section class="price" id="price">
+        <div class="container price-container">
+          <p class="uppertitle uppertitle-light">
+            Проведи час у компанії кращих майстрів
+          </p>
+          <h2 class="price-title title">Послуги та ціни</h2>
+          <ul class="price-list list">
+            <li class="left-price-list">
+              <ul class="left-price-list-item-list list">
+                <li class="left-price-list-item">
+                  <span class="price-item">Чоловіча стрижка</span>від 300 грн.
+                </li>
+                <li class="left-price-list-item">
+                  <span class="price-item">Стрижка бороди</span>від 200 грн.
+                </li>
+                <li class="left-price-list-item">
+                  <span class="price-item">Стрижка вусів</span>від 200 грн.
+                </li>
+                <li class="left-price-list-item">
+                  <span class="price-item">Гоління небезпечною бритвою</span>від
+                  200 грн.
+                </li>
+              </ul>
+            </li>
+            <li class="right-price-list">
+              <ul class="right-price-list-item-list list">
+                <li class="right-price-list-item">
+                  <span class="price-item">Стрижка у стажера</span>від 50 грн.
+                </li>
+                <li class="right-price-list-item">
+                  <span class="price-item">Стрижка під насадку</span>від 200
+                  грн.
+                </li>
+                <li class="right-price-list-item">
+                  <span class="price-item">Дитяча стрижка (до 12 років)</span
+                  >від 300 грн.
+                </li>
+                <li class="right-price-list-item">
+                  <span class="price-item">Камуфлювання сивини</span>від 200
+                  грн.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="order-btn button" type="button">онлайн-запис</button>
+        </div>
       </section>
     </main>
   </body>
